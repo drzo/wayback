@@ -36,7 +36,6 @@ require (
 	github.com/wabarc/archive.is v1.4.0
 	github.com/wabarc/archive.org v1.2.1-0.20210708220121-cb9b83ff9896
 	github.com/wabarc/ghostarchive v0.1.1
-	github.com/wabarc/go-anonfile v0.1.0
 	github.com/wabarc/go-catbox v0.1.0
 	github.com/wabarc/helper v0.0.0-20230418130954-be7440352bcb
 	github.com/wabarc/imgbb v1.0.0
@@ -52,7 +51,7 @@ require (
 	golang.org/x/net v0.26.0
 	golang.org/x/sync v0.7.0
 	gopkg.in/irc.v4 v4.0.0
-	gopkg.in/telebot.v3 v3.0.0-20220130115853-f0291132d3c3
+	gopkg.in/telebot.v3 v3.4.1-beta
 	maunium.net/go/mautrix v0.12.0
 	mellium.im/sasl v0.3.1
 	mellium.im/xmlstream v0.15.4
