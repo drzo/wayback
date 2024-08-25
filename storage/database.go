@@ -46,10 +46,7 @@ func NewConnectionPool(dsn string, minConnections, maxConnections int, connectio
 // nolint: errcheck
 func Migrate(db *sql.DB) error {
 	var currentVersion int
-	err := db.QueryRow(`SELECT version FROM schema_version`).Scan(&currentVersion)
-	if err != nil {
-		return fmt.Errorf("store: migrate failed: %v", err)
-	}
+	db.QueryRow(`SELECT version FROM schema_version`).Scan(&currentVersion)
 
 	for version := currentVersion; version < schemaVersion; version++ {
 		newVersion := version + 1
